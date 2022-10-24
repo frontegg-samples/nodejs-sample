@@ -40,7 +40,7 @@ After cloning the project, install it using
 In order to run the project, run
 ### `yarn start`
 
-The application will be opened on [http://localhost:8080](http://localhost:8080) in developement mode.
+The application will be opened on [http://localhost:8080](http://localhost:8080) in development mode.
 
 ### Running few samples
 
