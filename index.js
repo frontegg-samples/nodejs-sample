@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const { withAuthentication, ContextHolder } = require('@frontegg/client');
 
 const app = express();
@@ -8,9 +7,6 @@ ContextHolder.setContext({
     FRONTEGG_CLIENT_ID: '<YOUR_CLIENT_ID>',
     FRONTEGG_API_KEY: '<YOUR_API_KEY>',
 });
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/public', (req, res) => {
